@@ -142,7 +142,7 @@ const Calendar = () => {
       </div>
 
       {/* Calendar Grid */}
-      <div className="h-[88vh] grid grid-cols-7 md:gap-2 mt-2">
+      <div className="md:h-auto h-[88vh] grid grid-cols-7 md:gap-2 mt-2">
         {calendarDates.map((date) => {
           const isCurrentMonth = date.getMonth() === currentDate.getMonth();
           const isToday = date.toDateString() === new Date().toDateString();

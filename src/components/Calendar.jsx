@@ -111,7 +111,7 @@ const Calendar = () => {
   }, [refresh]);
 
   return (
-    <div className="w-full mx-auto md:p-8 p-2">
+    <div className="min-w-full mx-auto md:p-8 p-2">
       {/* Header */}
       <div className="flex justify-evenly items-center mb-4">
         <button

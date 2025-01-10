@@ -142,7 +142,7 @@ const Calendar = () => {
       </div>
 
       {/* Calendar Grid */}
-      <div className="grid grid-cols-7 gap-2 mt-2">
+      <div className="grid grid-cols-7 md:gap-2 mt-2">
         {calendarDates.map((date) => {
           const isCurrentMonth = date.getMonth() === currentDate.getMonth();
           const isToday = date.toDateString() === new Date().toDateString();
@@ -152,7 +152,7 @@ const Calendar = () => {
           return (
             <div
               key={date}
-              className={`date-box p-2 h-[6.5rem] flex flex-col gap-1 border-2 rounded-md cursor-pointer 
+              className={`date-box p-2 h-[6.5rem] flex flex-col gap-1 border-2 md:rounded-md cursor-pointer 
               ${isCurrentMonth ? "bg-white" : "bg-gray-100 text-gray-400"} 
               ${isToday ? "border-blue-500" : ""}`}
               onClick={(e) => {

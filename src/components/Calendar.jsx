@@ -3,7 +3,7 @@ import { BriefcaseBusiness, Calendar1Icon, ChevronLeft, ChevronRight, Clock, Del
 import EventFormPopup from "./EventFormPopup";
 import EventEditFormPopup from "./EventEditFormPopup";
 import { deleteEvent, getAllEvents } from "../utils/LocalStorage";
-import exportEvents from "../utils/ExportEvents"
+import {exportEvents} from "../utils/ExportEvents"
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());

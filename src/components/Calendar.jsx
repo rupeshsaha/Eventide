@@ -133,7 +133,7 @@ const Calendar = () => {
         >
           <ChevronRight />
         </button>
-        <button onClick={exportEvents}><Download/></button>
+        <button onClick={exportEvents(currentDate)}><Download/></button>
       </div>
 
       {/* Days of the Week */}

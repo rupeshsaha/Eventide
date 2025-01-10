@@ -1,4 +1,4 @@
-const exportEvents = (month,year) ={
+const exportEvents = (month,year) => {
     // Retrieve the array from localStorage
     const arrayData = localStorage.getItem("events");
     
@@ -24,4 +24,4 @@ const exportEvents = (month,year) ={
     document.body.removeChild(a);
 }
 
-export exportEvents;
+export {exportEvents};

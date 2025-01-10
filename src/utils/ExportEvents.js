@@ -1,4 +1,4 @@
-export const exportEvents = (month,year) ={
+const exportEvents = (month,year) ={
     // Retrieve the array from localStorage
     const arrayData = localStorage.getItem("events");
     
@@ -23,3 +23,5 @@ export const exportEvents = (month,year) ={
     // Remove the link (cleanup)
     document.body.removeChild(a);
 }
+
+export exportEvents;

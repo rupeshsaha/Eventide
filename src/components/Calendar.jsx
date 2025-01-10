@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BriefcaseBusiness, Calendar1Icon, ChevronLeft, ChevronRight, Clock, Delete, Edit, Info, Tag, Trash, WorkflowIcon, X  } from "lucide-react";
+import { BriefcaseBusiness, Calendar1Icon, ChevronLeft, ChevronRight, Clock, Delete, Edit, Info, Tag, Trash, WorkflowIcon, X, Download  } from "lucide-react";
 import EventFormPopup from "./EventFormPopup";
 import EventEditFormPopup from "./EventEditFormPopup";
 import { deleteEvent, getAllEvents } from "../utils/LocalStorage";
@@ -133,7 +133,7 @@ const Calendar = () => {
         >
           <ChevronRight />
         </button>
-        <button onClick={exportEvents}>Export Events</button>
+        <button onClick={exportEvents}><Download/></button>
       </div>
 
       {/* Days of the Week */}
